@@ -1,17 +1,16 @@
-CC = $(CROSS_COMPILE)gcc
+CROSS_COMPILE=
+srcs = writer.c
+objs = $(srcs:.c=.o)
 
-BUILD = .
-
-
-$(BUILD)/writer: $(BUILD)/writer.o
-	$(CC) $^ -o $@
-
-%.o: %.c
-	$(CC) -c $< -o $@
-
+.PHONY: all
+all: writer
 
 .PHONY: clean
-
 clean:
-	rm -f $(BUILD)/writer.o
-	rm -f $(BUILD)/writer
+	rm -f writer *.o
+
+$(objs): %.o: %.c
+	$(CROSS_COMPILE)gcc -c $<
+
+writer: $(objs)
+	$(CROSS_COMPILE)gcc -o $@ $?
