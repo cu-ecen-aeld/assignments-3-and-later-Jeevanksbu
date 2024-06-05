@@ -34973,3 +34973,1142 @@ finder-app execution complete, dropping to terminal
 qemu-system-aarch64: terminating on signal 15 from pid 462330 (killall)
 ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment3 ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu
 Test of assignment assignment3 complete with success
+Running test with user jeevank12
+CMake Error: The current CMakeCache.txt directory /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/CMakeCache.txt is different than the directory /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source "/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/CMakeLists.txt" does not match the source "/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+-- Generating ;/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 33%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Built target assignment-autotest
+/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read Jeevanksbu from conf/username.txt
+/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment3 ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu
+starting test with SKIP_BUILD  and DO_VALIDATE 
+~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/finder-app ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment3 ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu
+Using passed directory /tmp/aesd-autograder for output
+Adding the Image in outdir
+Creating the staging directory for the root filesystem
+Deleting rootfs directory at /tmp/aesd-autograder/rootfs and starting over
+  /tmp/aesd-autograder/rootfs//bin/arch -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ash -> busybox
+  /tmp/aesd-autograder/rootfs//bin/base32 -> busybox
+  /tmp/aesd-autograder/rootfs//bin/base64 -> busybox
+  /tmp/aesd-autograder/rootfs//bin/cat -> busybox
+  /tmp/aesd-autograder/rootfs//bin/chattr -> busybox
+  /tmp/aesd-autograder/rootfs//bin/chgrp -> busybox
+  /tmp/aesd-autograder/rootfs//bin/chmod -> busybox
+  /tmp/aesd-autograder/rootfs//bin/chown -> busybox
+  /tmp/aesd-autograder/rootfs//bin/conspy -> busybox
+  /tmp/aesd-autograder/rootfs//bin/cp -> busybox
+  /tmp/aesd-autograder/rootfs//bin/cpio -> busybox
+  /tmp/aesd-autograder/rootfs//bin/cttyhack -> busybox
+  /tmp/aesd-autograder/rootfs//bin/date -> busybox
+  /tmp/aesd-autograder/rootfs//bin/dd -> busybox
+  /tmp/aesd-autograder/rootfs//bin/df -> busybox
+  /tmp/aesd-autograder/rootfs//bin/dmesg -> busybox
+  /tmp/aesd-autograder/rootfs//bin/dnsdomainname -> busybox
+  /tmp/aesd-autograder/rootfs//bin/dumpkmap -> busybox
+  /tmp/aesd-autograder/rootfs//bin/echo -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ed -> busybox
+  /tmp/aesd-autograder/rootfs//bin/egrep -> busybox
+  /tmp/aesd-autograder/rootfs//bin/false -> busybox
+  /tmp/aesd-autograder/rootfs//bin/fatattr -> busybox
+  /tmp/aesd-autograder/rootfs//bin/fdflush -> busybox
+  /tmp/aesd-autograder/rootfs//bin/fgrep -> busybox
+  /tmp/aesd-autograder/rootfs//bin/fsync -> busybox
+  /tmp/aesd-autograder/rootfs//bin/getopt -> busybox
+  /tmp/aesd-autograder/rootfs//bin/grep -> busybox
+  /tmp/aesd-autograder/rootfs//bin/gunzip -> busybox
+  /tmp/aesd-autograder/rootfs//bin/gzip -> busybox
+  /tmp/aesd-autograder/rootfs//bin/hostname -> busybox
+  /tmp/aesd-autograder/rootfs//bin/hush -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ionice -> busybox
+  /tmp/aesd-autograder/rootfs//bin/iostat -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ipcalc -> busybox
+  /tmp/aesd-autograder/rootfs//bin/kbd_mode -> busybox
+  /tmp/aesd-autograder/rootfs//bin/kill -> busybox
+  /tmp/aesd-autograder/rootfs//bin/link -> busybox
+  /tmp/aesd-autograder/rootfs//bin/linux32 -> busybox
+  /tmp/aesd-autograder/rootfs//bin/linux64 -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ln -> busybox
+  /tmp/aesd-autograder/rootfs//bin/login -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ls -> busybox
+  /tmp/aesd-autograder/rootfs//bin/lsattr -> busybox
+  /tmp/aesd-autograder/rootfs//bin/lzop -> busybox
+  /tmp/aesd-autograder/rootfs//bin/makemime -> busybox
+  /tmp/aesd-autograder/rootfs//bin/mkdir -> busybox
+  /tmp/aesd-autograder/rootfs//bin/mknod -> busybox
+  /tmp/aesd-autograder/rootfs//bin/mktemp -> busybox
+  /tmp/aesd-autograder/rootfs//bin/more -> busybox
+  /tmp/aesd-autograder/rootfs//bin/mount -> busybox
+  /tmp/aesd-autograder/rootfs//bin/mountpoint -> busybox
+  /tmp/aesd-autograder/rootfs//bin/mpstat -> busybox
+  /tmp/aesd-autograder/rootfs//bin/mt -> busybox
+  /tmp/aesd-autograder/rootfs//bin/mv -> busybox
+  /tmp/aesd-autograder/rootfs//bin/netstat -> busybox
+  /tmp/aesd-autograder/rootfs//bin/nice -> busybox
+  /tmp/aesd-autograder/rootfs//bin/nuke -> busybox
+  /tmp/aesd-autograder/rootfs//bin/pidof -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ping -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ping6 -> busybox
+  /tmp/aesd-autograder/rootfs//bin/pipe_progress -> busybox
+  /tmp/aesd-autograder/rootfs//bin/printenv -> busybox
+  /tmp/aesd-autograder/rootfs//bin/ps -> busybox
+  /tmp/aesd-autograder/rootfs//bin/pwd -> busybox
+  /tmp/aesd-autograder/rootfs//bin/reformime -> busybox
+  /tmp/aesd-autograder/rootfs//bin/resume -> busybox
+  /tmp/aesd-autograder/rootfs//bin/rev -> busybox
+  /tmp/aesd-autograder/rootfs//bin/rm -> busybox
+  /tmp/aesd-autograder/rootfs//bin/rmdir -> busybox
+  /tmp/aesd-autograder/rootfs//bin/rpm -> busybox
+  /tmp/aesd-autograder/rootfs//bin/run-parts -> busybox
+  /tmp/aesd-autograder/rootfs//bin/scriptreplay -> busybox
+  /tmp/aesd-autograder/rootfs//bin/sed -> busybox
+  /tmp/aesd-autograder/rootfs//bin/setarch -> busybox
+  /tmp/aesd-autograder/rootfs//bin/setpriv -> busybox
+  /tmp/aesd-autograder/rootfs//bin/setserial -> busybox
+  /tmp/aesd-autograder/rootfs//bin/sh -> busybox
+  /tmp/aesd-autograder/rootfs//bin/sleep -> busybox
+  /tmp/aesd-autograder/rootfs//bin/stat -> busybox
+  /tmp/aesd-autograder/rootfs//bin/stty -> busybox
+  /tmp/aesd-autograder/rootfs//bin/su -> busybox
+  /tmp/aesd-autograder/rootfs//bin/sync -> busybox
+  /tmp/aesd-autograder/rootfs//bin/tar -> busybox
+  /tmp/aesd-autograder/rootfs//bin/touch -> busybox
+  /tmp/aesd-autograder/rootfs//bin/true -> busybox
+  /tmp/aesd-autograder/rootfs//bin/umount -> busybox
+  /tmp/aesd-autograder/rootfs//bin/uname -> busybox
+  /tmp/aesd-autograder/rootfs//bin/usleep -> busybox
+  /tmp/aesd-autograder/rootfs//bin/vi -> busybox
+  /tmp/aesd-autograder/rootfs//bin/watch -> busybox
+  /tmp/aesd-autograder/rootfs//bin/zcat -> busybox
+  /tmp/aesd-autograder/rootfs//linuxrc -> bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/acpid -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/adjtimex -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/arp -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/blkid -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/blockdev -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/bootchartd -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/depmod -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/devmem -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/fbsplash -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/fdisk -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/findfs -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/freeramdisk -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/fsck -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/fsck.minix -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/fstrim -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/getty -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/halt -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/hdparm -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/hwclock -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/ifconfig -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/ifdown -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/ifenslave -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/ifup -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/init -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/insmod -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/ip -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/ipaddr -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/iplink -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/ipneigh -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/iproute -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/iprule -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/iptunnel -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/klogd -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/loadkmap -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/logread -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/losetup -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/lsmod -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/makedevs -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/mdev -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/mkdosfs -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/mke2fs -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/mkfs.ext2 -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/mkfs.minix -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/mkfs.vfat -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/mkswap -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/modinfo -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/modprobe -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/nameif -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/pivot_root -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/poweroff -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/raidautorun -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/reboot -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/rmmod -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/route -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/run-init -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/runlevel -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/setconsole -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/slattach -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/start-stop-daemon -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/sulogin -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/swapoff -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/swapon -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/switch_root -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/sysctl -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/syslogd -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/tc -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/tunctl -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/udhcpc -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/uevent -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/vconfig -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/watchdog -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//sbin/zcip -> ../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/[ -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/[[ -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/awk -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/basename -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/bc -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/beep -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/blkdiscard -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/bunzip2 -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/bzcat -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/bzip2 -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/cal -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/chpst -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/chrt -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/chvt -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/cksum -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/clear -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/cmp -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/comm -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/crontab -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/cryptpw -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/cut -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/dc -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/deallocvt -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/diff -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/dirname -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/dos2unix -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/dpkg -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/dpkg-deb -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/du -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/dumpleases -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/eject -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/env -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/envdir -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/envuidgid -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/expand -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/expr -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/factor -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/fallocate -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/fgconsole -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/find -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/flock -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/fold -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/free -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/ftpget -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/ftpput -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/fuser -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/groups -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/hd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/head -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/hexdump -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/hexedit -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/hostid -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/id -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/install -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/ipcrm -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/ipcs -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/killall -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/last -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/less -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/logger -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/logname -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/lpq -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/lpr -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/lsof -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/lspci -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/lsscsi -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/lsusb -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/lzcat -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/lzma -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/man -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/md5sum -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/mesg -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/microcom -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/mkfifo -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/mkpasswd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/nc -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/nl -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/nmeter -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/nohup -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/nproc -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/nsenter -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/nslookup -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/od -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/openvt -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/passwd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/paste -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/patch -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/pgrep -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/pkill -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/pmap -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/printf -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/pscan -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/pstree -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/pwdx -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/readlink -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/realpath -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/renice -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/reset -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/resize -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/rpm2cpio -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/runsv -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/runsvdir -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/rx -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/script -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/seq -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/setfattr -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/setkeycodes -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/setsid -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/setuidgid -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/sha1sum -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/sha256sum -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/sha3sum -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/sha512sum -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/showkey -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/shred -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/shuf -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/smemcap -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/softlimit -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/sort -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/split -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/ssl_client -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/strings -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/sum -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/sv -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/svc -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/svok -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/tac -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/tail -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/taskset -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/tcpsvd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/tee -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/telnet -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/test -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/tftp -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/time -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/timeout -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/top -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/tr -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/traceroute -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/traceroute6 -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/truncate -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/ts -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/tty -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/ttysize -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/udhcpc6 -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/udpsvd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/unexpand -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/uniq -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/unix2dos -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/unlink -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/unlzma -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/unshare -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/unxz -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/unzip -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/uptime -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/users -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/uudecode -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/uuencode -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/vlock -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/volname -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/w -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/wall -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/wc -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/wget -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/which -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/who -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/whoami -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/whois -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/xargs -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/xxd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/xz -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/xzcat -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/bin/yes -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/add-shell -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/addgroup -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/adduser -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/arping -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/brctl -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/chat -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/chpasswd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/chroot -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/crond -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/delgroup -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/deluser -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/dhcprelay -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/dnsd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ether-wake -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/fakeidentd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/fbset -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/fdformat -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/fsfreeze -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ftpd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/httpd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/i2cdetect -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/i2cdump -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/i2cget -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/i2cset -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/i2ctransfer -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ifplugd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/inetd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/killall5 -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/loadfont -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/lpd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/mim -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/nanddump -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/nandwrite -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/nbd-client -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/nologin -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ntpd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/partprobe -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/popmaildir -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/powertop -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/rdate -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/rdev -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/readahead -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/readprofile -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/remove-shell -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/rtcwake -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/sendmail -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/setfont -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/setlogcons -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/svlogd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/telnetd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/tftpd -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ubiattach -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ubidetach -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ubimkvol -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ubirename -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ubirmvol -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ubirsvol -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/ubiupdatevol -> ../../bin/busybox
+  /tmp/aesd-autograder/rootfs//usr/sbin/udhcpd -> ../../bin/busybox
+
+
+--------------------------------------------------
+You will probably need to make your busybox binary
+setuid root to ensure all configured applets will
+work properly.
+--------------------------------------------------
+
+Library dependencies
+      [Requesting program interpreter: /lib/ld-linux-aarch64.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libresolv.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+Add library dependencies to rootfs
+Make device nodes
+Clean and build the writer utility
+rm -f writer *.o
+aarch64-none-linux-gnu-gcc -c writer.c
+aarch64-none-linux-gnu-gcc -o writer writer.o
+Copy the finder related scripts and executables to the /home directory     on the target rootfs
+Chown the root directory
+Create initramfs.cpio.gz
+.
+./usr
+./usr/sbin
+./usr/sbin/fsfreeze
+./usr/sbin/lpd
+./usr/sbin/fdformat
+./usr/sbin/inetd
+./usr/sbin/ubidetach
+./usr/sbin/brctl
+./usr/sbin/i2cdetect
+./usr/sbin/tftpd
+./usr/sbin/killall5
+./usr/sbin/udhcpd
+./usr/sbin/setfont
+./usr/sbin/fbset
+./usr/sbin/mim
+./usr/sbin/svlogd
+./usr/sbin/httpd
+./usr/sbin/ether-wake
+./usr/sbin/ubiupdatevol
+./usr/sbin/rdev
+./usr/sbin/ubirmvol
+./usr/sbin/chat
+./usr/sbin/fakeidentd
+./usr/sbin/i2cget
+./usr/sbin/delgroup
+./usr/sbin/deluser
+./usr/sbin/dnsd
+./usr/sbin/rtcwake
+./usr/sbin/sendmail
+./usr/sbin/readahead
+./usr/sbin/arping
+./usr/sbin/nbd-client
+./usr/sbin/i2ctransfer
+./usr/sbin/add-shell
+./usr/sbin/chroot
+./usr/sbin/ftpd
+./usr/sbin/remove-shell
+./usr/sbin/nanddump
+./usr/sbin/ntpd
+./usr/sbin/readprofile
+./usr/sbin/i2cdump
+./usr/sbin/loadfont
+./usr/sbin/ubiattach
+./usr/sbin/crond
+./usr/sbin/i2cset
+./usr/sbin/addgroup
+./usr/sbin/partprobe
+./usr/sbin/ubirename
+./usr/sbin/popmaildir
+./usr/sbin/powertop
+./usr/sbin/telnetd
+./usr/sbin/ubimkvol
+./usr/sbin/dhcprelay
+./usr/sbin/adduser
+./usr/sbin/ifplugd
+./usr/sbin/nandwrite
+./usr/sbin/chpasswd
+./usr/sbin/nologin
+./usr/sbin/ubirsvol
+./usr/sbin/setlogcons
+./usr/sbin/rdate
+./usr/bin
+./usr/bin/unxz
+./usr/bin/[[
+./usr/bin/tee
+./usr/bin/fgconsole
+./usr/bin/tac
+./usr/bin/microcom
+./usr/bin/lspci
+./usr/bin/mkpasswd
+./usr/bin/uniq
+./usr/bin/bc
+./usr/bin/wget
+./usr/bin/logger
+./usr/bin/unlink
+./usr/bin/find
+./usr/bin/dpkg-deb
+./usr/bin/fuser
+./usr/bin/truncate
+./usr/bin/man
+./usr/bin/pwdx
+./usr/bin/xxd
+./usr/bin/smemcap
+./usr/bin/envdir
+./usr/bin/traceroute6
+./usr/bin/envuidgid
+./usr/bin/users
+./usr/bin/comm
+./usr/bin/realpath
+./usr/bin/nslookup
+./usr/bin/seq
+./usr/bin/nohup
+./usr/bin/less
+./usr/bin/dumpleases
+./usr/bin/top
+./usr/bin/unlzma
+./usr/bin/lsof
+./usr/bin/udhcpc6
+./usr/bin/strings
+./usr/bin/nproc
+./usr/bin/nc
+./usr/bin/tcpsvd
+./usr/bin/lsusb
+./usr/bin/test
+./usr/bin/bunzip2
+./usr/bin/telnet
+./usr/bin/unix2dos
+./usr/bin/sort
+./usr/bin/[
+./usr/bin/lsscsi
+./usr/bin/sha3sum
+./usr/bin/deallocvt
+./usr/bin/mesg
+./usr/bin/install
+./usr/bin/dirname
+./usr/bin/traceroute
+./usr/bin/runsvdir
+./usr/bin/ts
+./usr/bin/softlimit
+./usr/bin/vlock
+./usr/bin/whoami
+./usr/bin/chrt
+./usr/bin/wc
+./usr/bin/bzcat
+./usr/bin/ftpput
+./usr/bin/unshare
+./usr/bin/pscan
+./usr/bin/sum
+./usr/bin/split
+./usr/bin/printf
+./usr/bin/runsv
+./usr/bin/sha512sum
+./usr/bin/xargs
+./usr/bin/hexedit
+./usr/bin/yes
+./usr/bin/nmeter
+./usr/bin/xz
+./usr/bin/cut
+./usr/bin/dos2unix
+./usr/bin/setfattr
+./usr/bin/blkdiscard
+./usr/bin/xzcat
+./usr/bin/beep
+./usr/bin/cal
+./usr/bin/free
+./usr/bin/tty
+./usr/bin/crontab
+./usr/bin/clear
+./usr/bin/which
+./usr/bin/whois
+./usr/bin/rpm2cpio
+./usr/bin/shred
+./usr/bin/flock
+./usr/bin/md5sum
+./usr/bin/env
+./usr/bin/wall
+./usr/bin/udpsvd
+./usr/bin/hostid
+./usr/bin/taskset
+./usr/bin/passwd
+./usr/bin/sha256sum
+./usr/bin/renice
+./usr/bin/script
+./usr/bin/sha1sum
+./usr/bin/dc
+./usr/bin/head
+./usr/bin/nsenter
+./usr/bin/readlink
+./usr/bin/ftpget
+./usr/bin/openvt
+./usr/bin/pstree
+./usr/bin/patch
+./usr/bin/uudecode
+./usr/bin/chpst
+./usr/bin/dpkg
+./usr/bin/ssl_client
+./usr/bin/diff
+./usr/bin/tftp
+./usr/bin/chvt
+./usr/bin/tail
+./usr/bin/hexdump
+./usr/bin/id
+./usr/bin/resize
+./usr/bin/last
+./usr/bin/fold
+./usr/bin/tr
+./usr/bin/unexpand
+./usr/bin/lpr
+./usr/bin/who
+./usr/bin/basename
+./usr/bin/uuencode
+./usr/bin/showkey
+./usr/bin/od
+./usr/bin/uptime
+./usr/bin/svok
+./usr/bin/unzip
+./usr/bin/paste
+./usr/bin/ipcrm
+./usr/bin/lzma
+./usr/bin/setsid
+./usr/bin/timeout
+./usr/bin/ttysize
+./usr/bin/lpq
+./usr/bin/reset
+./usr/bin/pgrep
+./usr/bin/fallocate
+./usr/bin/sv
+./usr/bin/setuidgid
+./usr/bin/eject
+./usr/bin/rx
+./usr/bin/du
+./usr/bin/nl
+./usr/bin/expr
+./usr/bin/expand
+./usr/bin/hd
+./usr/bin/setkeycodes
+./usr/bin/bzip2
+./usr/bin/volname
+./usr/bin/pkill
+./usr/bin/cryptpw
+./usr/bin/awk
+./usr/bin/pmap
+./usr/bin/cksum
+./usr/bin/mkfifo
+./usr/bin/factor
+./usr/bin/groups
+./usr/bin/w
+./usr/bin/lzcat
+./usr/bin/svc
+./usr/bin/logname
+./usr/bin/cmp
+./usr/bin/time
+./usr/bin/killall
+./usr/bin/ipcs
+./usr/bin/shuf
+./usr/lib
+./sbin
+./sbin/halt
+./sbin/pivot_root
+./sbin/fbsplash
+./sbin/fsck.minix
+./sbin/makedevs
+./sbin/swapon
+./sbin/syslogd
+./sbin/depmod
+./sbin/slattach
+./sbin/ifenslave
+./sbin/setconsole
+./sbin/blockdev
+./sbin/loadkmap
+./sbin/arp
+./sbin/swapoff
+./sbin/ipneigh
+./sbin/mkswap
+./sbin/mke2fs
+./sbin/insmod
+./sbin/hdparm
+./sbin/watchdog
+./sbin/mkfs.minix
+./sbin/findfs
+./sbin/fstrim
+./sbin/mkfs.ext2
+./sbin/klogd
+./sbin/iproute
+./sbin/ifconfig
+./sbin/nameif
+./sbin/iprule
+./sbin/modprobe
+./sbin/mkdosfs
+./sbin/hwclock
+./sbin/ifup
+./sbin/acpid
+./sbin/run-init
+./sbin/route
+./sbin/vconfig
+./sbin/devmem
+./sbin/runlevel
+./sbin/raidautorun
+./sbin/reboot
+./sbin/mkfs.vfat
+./sbin/poweroff
+./sbin/ifdown
+./sbin/blkid
+./sbin/adjtimex
+./sbin/tunctl
+./sbin/bootchartd
+./sbin/getty
+./sbin/sulogin
+./sbin/zcip
+./sbin/rmmod
+./sbin/losetup
+./sbin/lsmod
+./sbin/logread
+./sbin/fdisk
+./sbin/fsck
+./sbin/ipaddr
+./sbin/switch_root
+./sbin/modinfo
+./sbin/start-stop-daemon
+./sbin/iptunnel
+./sbin/tc
+./sbin/uevent
+./sbin/iplink
+./sbin/freeramdisk
+./sbin/udhcpc
+./sbin/mdev
+./sbin/init
+./sbin/ip
+./sbin/sysctl
+./bin
+./bin/usleep
+./bin/rev
+./bin/more
+./bin/rmdir
+./bin/grep
+./bin/mount
+./bin/gzip
+./bin/chown
+./bin/scriptreplay
+./bin/printenv
+./bin/sleep
+./bin/uname
+./bin/login
+./bin/arch
+./bin/chmod
+./bin/ipcalc
+./bin/lzop
+./bin/mountpoint
+./bin/dd
+./bin/gunzip
+./bin/makemime
+./bin/dumpkmap
+./bin/pidof
+./bin/egrep
+./bin/mt
+./bin/false
+./bin/mkdir
+./bin/touch
+./bin/rpm
+./bin/fdflush
+./bin/pipe_progress
+./bin/stat
+./bin/getopt
+./bin/umount
+./bin/conspy
+./bin/linux64
+./bin/date
+./bin/hush
+./bin/kill
+./bin/su
+./bin/ping6
+./bin/vi
+./bin/cat
+./bin/dnsdomainname
+./bin/df
+./bin/setserial
+./bin/hostname
+./bin/chattr
+./bin/mknod
+./bin/ash
+./bin/cpio
+./bin/kbd_mode
+./bin/base32
+./bin/fsync
+./bin/nice
+./bin/iostat
+./bin/ln
+./bin/sync
+./bin/setarch
+./bin/ionice
+./bin/resume
+./bin/fgrep
+./bin/rm
+./bin/sed
+./bin/ping
+./bin/ed
+./bin/link
+./bin/fatattr
+./bin/mv
+./bin/tar
+./bin/linux32
+./bin/watch
+./bin/ps
+./bin/dmesg
+./bin/chgrp
+./bin/lsattr
+./bin/cp
+./bin/run-parts
+./bin/true
+./bin/ls
+./bin/base64
+./bin/zcat
+./bin/setpriv
+./bin/busybox
+./bin/sh
+./bin/echo
+./bin/stty
+./bin/netstat
+./bin/cttyhack
+./bin/reformime
+./bin/mpstat
+./bin/nuke
+./bin/mktemp
+./bin/pwd
+./linuxrc
+./lib
+./lib/ld-linux-aarch64.so.1
+./home
+./home/autorun-qemu.sh
+./home/writer
+./home/conf
+./home/conf/username.txt
+./home/conf/assignment.txt
+./home/finder.sh
+./home/finder-test.sh
+./dev
+./dev/null
+./dev/tty
+./etc
+./proc
+./lib64
+./lib64/libm.so.6
+./lib64/libc.so.6
+./lib64/libresolv.so.2
+./sys
+./var
+./var/log
+./tmp
+35765 blocks
+~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment3 ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu
+~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/finder-app ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment3 ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu
+Kick off qemu in the background
+Wait for app to finish
+Booting the kernel
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] Linux version 5.1.10 (jeevank12@jeevan) (gcc version 10.3.1 20210621 (GNU Toolchain for the A-profile Architecture 10.3-2021.07 (arm-10.29))) #1 SMP PREEMPT Tue Jun 4 12:25:26 EDT 2024
+[    0.000000] Machine model: linux,dummy-virt
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] cma: Reserved 32 MiB at 0x000000004e000000
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000004fffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x4df73840-0x4df74fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000040000000-0x000000004fffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000004fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000004fffffff]
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv0.2 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] random: get_random_bytes called from start_kernel+0xa0/0x458 with crng_init=0
+[    0.000000] percpu: Embedded 23 pages/cpu s56664 r8192 d29352 u94208
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] CPU features: detected: ARM erratum 843419
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 64512
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: rdinit=/home/autorun-qemu.sh console=ttyAMA0
+[    0.000000] Memory: 184108K/262144K available (11388K kernel code, 1716K rwdata, 5548K rodata, 1408K init, 446K bss, 45268K reserved, 32768K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000259] sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.011336] Console: colour dummy device 80x25
+[    0.013589] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+[    0.013755] pid_max: default: 32768 minimum: 301
+[    0.015080] LSM: Security Framework initializing
+[    0.016925] Dentry cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.017176] Inode-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.017404] Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+[    0.017496] Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes)
+[    0.033514] *** VALIDATE proc ***
+[    0.038585] *** VALIDATE cgroup1 ***
+[    0.038631] *** VALIDATE cgroup2 ***
+[    0.084492] ASID allocator initialised with 32768 entries
+[    0.093591] rcu: Hierarchical SRCU implementation.
+[    0.111262] EFI services will not be available.
+[    0.117680] smp: Bringing up secondary CPUs ...
+[    0.117780] smp: Brought up 1 node, 1 CPU
+[    0.117814] SMP: Total of 1 processors activated.
+[    0.117922] CPU features: detected: 32-bit EL0 Support
+[    0.118016] CPU features: detected: CRC32 instructions
+[    0.120952] CPU: All CPU(s) started at EL1
+[    0.121155] alternatives: patching kernel code
+[    0.136130] devtmpfs: initialized
+[    0.155522] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.155823] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.177642] pinctrl core: initialized pinctrl subsystem
+[    0.233397] DMI not present or invalid.
+[    0.244558] NET: Registered protocol family 16
+[    0.247457] audit: initializing netlink subsys (disabled)
+[    0.250491] audit: type=2000 audit(0.212:1): state=initialized audit_enabled=0 res=1
+[    0.278743] cpuidle: using governor menu
+[    0.283857] vdso: 2 pages (1 code @ (____ptrval____), 1 data @ (____ptrval____))
+[    0.284110] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.299230] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.326424] Serial: AMBA PL011 UART driver
+[    0.433138] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 39, base_baud = 0) is a PL011 rev1
+[    1.283122] printk: console [ttyAMA0] enabled
+[    1.582235] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    1.597763] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    1.605138] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    1.616972] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    1.637362] cryptd: max_cpu_qlen set to 1000
+[    1.669394] ACPI: Interpreter disabled.
+[    1.755747] vgaarb: loaded
+[    1.777081] SCSI subsystem initialized
+[    1.800609] usbcore: registered new interface driver usbfs
+[    1.817984] usbcore: registered new interface driver hub
+[    1.841577] usbcore: registered new device driver usb
+[    1.855808] pps_core: LinuxPPS API ver. 1 registered
+[    1.857544] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.887643] PTP clock support registered
+[    1.904886] EDAC MC: Ver: 3.0.0
+[    2.017283] Advanced Linux Sound Architecture Driver Initialized.
+[    2.086109] clocksource: Switched to clocksource arch_sys_counter
+[    2.112756] VFS: Disk quotas dquot_6.6.0
+[    2.114264] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    2.115547] *** VALIDATE hugetlbfs ***
+[    2.117175] pnp: PnP ACPI: disabled
+[    2.308082] NET: Registered protocol family 2
+[    2.326540] tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes)
+[    2.327199] TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+[    2.327810] TCP bind hash table entries: 2048 (order: 3, 32768 bytes)
+[    2.328315] TCP: Hash tables configured (established 2048 bind 2048)
+[    2.332365] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    2.342615] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    2.345718] NET: Registered protocol family 1
+[    2.402021] RPC: Registered named UNIX socket transport module.
+[    2.406266] RPC: Registered udp transport module.
+[    2.430781] RPC: Registered tcp transport module.
+[    2.444705] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    2.468137] Unpacking initramfs...
+[    3.279890] Freeing initrd memory: 6004K
+[    3.286847] hw perfevents: enabled with armv8_pmuv3 PMU driver, 5 counters available
+[    3.295596] kvm [1]: HYP mode not available
+[    4.327344] Initialise system trusted keyrings
+[    4.346586] workingset: timestamp_bits=44 max_order=16 bucket_order=0
+[    4.491087] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    4.535799] NFS: Registering the id_resolver key type
+[    4.546585] Key type id_resolver registered
+[    4.550145] Key type id_legacy registered
+[    4.558319] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    4.572930] 9p: Installing v9fs 9p2000 file system support
+[    5.585984] Key type asymmetric registered
+[    5.591848] Asymmetric key parser 'x509' registered
+[    5.604334] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    5.610611] io scheduler mq-deadline registered
+[    5.622242] io scheduler kyber registered
+[    5.814701] pl061_gpio 9030000.pl061: PL061 GPIO chip @0x0000000009030000 registered
+[    5.865558] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    5.869538] pci-host-generic 4010000000.pcie:    IO 0x3eff0000..0x3effffff -> 0x00000000
+[    5.905351] pci-host-generic 4010000000.pcie:   MEM 0x10000000..0x3efeffff -> 0x10000000
+[    5.911725] pci-host-generic 4010000000.pcie:   MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    5.950054] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    5.986353] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+[    5.989074] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    6.012316] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    6.014306] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+[    6.027882] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+[    6.094671] pci 0000:00:01.0: BAR 6: assigned [mem 0x10000000-0x1007ffff pref]
+[    6.096550] pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
+[    6.104088] pci 0000:00:01.0: BAR 1: assigned [mem 0x10080000-0x10080fff]
+[    6.106006] pci 0000:00:01.0: BAR 0: assigned [io  0x1000-0x101f]
+[    6.191922] EINJ: ACPI disabled.
+[    6.352682] virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+[    6.440090] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    6.496648] SuperH (H)SCI(F) driver initialized
+[    6.538941] msm_serial: driver initialized
+[    6.603475] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    6.724206] loop: module loaded
+[    6.839533] libphy: Fixed MDIO Bus: probed
+[    6.869022] tun: Universal TUN/TAP device driver, 1.6
+[    6.973323] thunder_xcv, ver 1.0
+[    6.993324] thunder_bgx, ver 1.0
+[    6.999594] nicpf, ver 1.0
+[    7.032352] hclge is initializing
+[    7.042505] hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+[    7.064348] hns3: Copyright (c) 2017 Huawei Corporation.
+[    7.092331] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+[    7.119844] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    7.155684] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.6.0-k
+[    7.188233] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    7.211668] igbvf: Intel(R) Gigabit Virtual Function Network Driver - version 2.4.0-k
+[    7.245949] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    7.280451] sky2: driver version 1.30
+[    7.326581] VFIO - User Level meta-driver version: 0.3
+[    7.390395] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    7.414622] ehci-pci: EHCI PCI platform driver
+[    7.427002] ehci-platform: EHCI generic platform driver
+[    7.445056] ehci-orion: EHCI orion driver
+[    7.459940] ehci-exynos: EHCI EXYNOS driver
+[    7.471439] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    7.495347] ohci-pci: OHCI PCI platform driver
+[    7.512466] ohci-platform: OHCI generic platform driver
+[    7.555700] ohci-exynos: OHCI EXYNOS driver
+[    7.602556] usbcore: registered new interface driver usb-storage
+[    7.691087] rtc-pl031 9010000.pl031: registered as rtc0
+[    7.717219] i2c /dev entries driver
+[    7.896850] sdhci: Secure Digital Host Controller Interface driver
+[    7.908858] sdhci: Copyright(c) Pierre Ossman
+[    7.918014] Synopsys Designware Multimedia Card Interface Driver
+[    7.949259] sdhci-pltfm: SDHCI platform and OF driver helper
+[    7.992579] ledtrig-cpu: registered to indicate activity on CPUs
+[    8.072103] usbcore: registered new interface driver usbhid
+[    8.085044] usbhid: USB HID core driver
+[    8.187746] NET: Registered protocol family 17
+[    8.199153] 9pnet: Installing 9P2000 support
+[    8.201817] Key type dns_resolver registered
+[    8.221377] registered taskstats version 1
+[    8.221845] Loading compiled-in X.509 certificates
+[    8.285305] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    8.312771] rtc-pl031 9010000.pl031: setting system clock to 2024-06-05T08:09:51 UTC (1717574991)
+[    8.355355] ALSA device list:
+[    8.355625]   No soundcards found.
+[    8.361127] uart-pl011 9000000.pl011: no DMA platform data
+[    8.567733] Freeing unused kernel memory: 1408K
+[    8.572020] Run /home/autorun-qemu.sh as init process
+Running test script
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+Current directory: /home
+realpath: ../conf: No such file or directory
+Attempting to access: 
+/home/conf/assignment.txt
+/tmp/aeld-data created
+writer[1517]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu1.txt
+
+writer[1518]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu2.txt
+
+writer[1519]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu3.txt
+
+writer[1520]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu4.txt
+
+writer[1521]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu5.txt
+
+writer[1522]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu6.txt
+
+writer[1523]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu7.txt
+
+writer[1524]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu8.txt
+
+writer[1525]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu9.txt
+
+writer[1526]: Writing AELD_IS_FUN to /tmp/aeld-data/Jeevanksbu10.txt
+
+DIRECTORY: /tmp/aeld-data The number of files are 10 and the number of matching lines are 10
+success
+Completed with success!!
+finder-app execution complete, dropping to terminal
+qemu-system-aarch64: terminating on signal 15 from pid 727918 (killall)
+~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment3 ~/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu
+Test of assignment assignment3 complete with success
