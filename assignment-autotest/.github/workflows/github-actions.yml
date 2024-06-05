@@ -1,12 +1,32 @@
 name: assignment-autotest-test
+
 on: [push]
+
 jobs:
-    test:
-        container: cuaesd/aesd-autotest:unit-test
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v2
-          - name: Checkout submodules
-            run : git submodule update --init --recursive
-          - name: Run unit test
-            run: ./full-test.sh
+  test:
+    runs-on: ubuntu-latest
+    container: cuaesd/aesd-autotest:unit-test
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Checkout Submodules
+      run: git submodule update --init --recursive
+
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y gcc-aarch64-linux-gnu make wget
+
+    - name: Set Up Cross Compiler
+      run: |
+        wget https://developer.arm.com/-/media/Files/downloads/gnu/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu.tar.xz
+        tar -xvf gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu.tar.xz
+        sudo mv gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu /opt/cross
+
+    - name: Set Environment Variable
+      run: echo "LIBC=/opt/cross/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc" >> $GITHUB_ENV
+
+    - name: Run Full Test
+      run: ./full-test.sh
