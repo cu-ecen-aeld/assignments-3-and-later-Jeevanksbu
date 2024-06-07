@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu
+CMAKE_SOURCE_DIR = /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build
+CMAKE_BINARY_DIR = /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/CMakeFiles /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/CMakeFiles/progress.marks
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/CMakeFiles 0
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/CMakeFiles /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/CMakeFiles/progress.marks
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/clean
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/preinstall
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/preinstall
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 assignment-autotest/CMakeFiles/assignment-autotest.dir/rule:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/CMakeFiles/assignment-autotest.dir/rule
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f CMakeFiles/Makefile2 assignment-autotest/CMakeFiles/assignment-autotest.dir/rule
 .PHONY : assignment-autotest/CMakeFiles/assignment-autotest.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ assignment-autotest: assignment-autotest/CMakeFiles/assignment-autotest.dir/rule
 
 # fast build rule for target.
 assignment-autotest/fast:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/build
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/build
 .PHONY : assignment-autotest/fast
 
 __/examples/autotest-validate/autotest-validate.o: __/examples/autotest-validate/autotest-validate.c.o
@@ -177,7 +177,7 @@ __/examples/autotest-validate/autotest-validate.o: __/examples/autotest-validate
 
 # target to build an object file
 __/examples/autotest-validate/autotest-validate.c.o:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
 .PHONY : __/examples/autotest-validate/autotest-validate.c.o
 
 __/examples/autotest-validate/autotest-validate.i: __/examples/autotest-validate/autotest-validate.c.i
@@ -186,7 +186,7 @@ __/examples/autotest-validate/autotest-validate.i: __/examples/autotest-validate
 
 # target to preprocess a source file
 __/examples/autotest-validate/autotest-validate.c.i:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.i
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.i
 .PHONY : __/examples/autotest-validate/autotest-validate.c.i
 
 __/examples/autotest-validate/autotest-validate.s: __/examples/autotest-validate/autotest-validate.c.s
@@ -195,62 +195,35 @@ __/examples/autotest-validate/autotest-validate.s: __/examples/autotest-validate
 
 # target to generate assembly for a file
 __/examples/autotest-validate/autotest-validate.c.s:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.s
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.s
 .PHONY : __/examples/autotest-validate/autotest-validate.c.s
 
-__/student-test/assignment1/Test_validate_username.o: __/student-test/assignment1/Test_validate_username.c.o
+__/examples/threading/threading.o: __/examples/threading/threading.c.o
 
-.PHONY : __/student-test/assignment1/Test_validate_username.o
-
-# target to build an object file
-__/student-test/assignment1/Test_validate_username.c.o:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
-.PHONY : __/student-test/assignment1/Test_validate_username.c.o
-
-__/student-test/assignment1/Test_validate_username.i: __/student-test/assignment1/Test_validate_username.c.i
-
-.PHONY : __/student-test/assignment1/Test_validate_username.i
-
-# target to preprocess a source file
-__/student-test/assignment1/Test_validate_username.c.i:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.i
-.PHONY : __/student-test/assignment1/Test_validate_username.c.i
-
-__/student-test/assignment1/Test_validate_username.s: __/student-test/assignment1/Test_validate_username.c.s
-
-.PHONY : __/student-test/assignment1/Test_validate_username.s
-
-# target to generate assembly for a file
-__/student-test/assignment1/Test_validate_username.c.s:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.s
-.PHONY : __/student-test/assignment1/Test_validate_username.c.s
-
-__/student-test/assignment1/Test_validate_username_Runner.o: __/student-test/assignment1/Test_validate_username_Runner.c.o
-
-.PHONY : __/student-test/assignment1/Test_validate_username_Runner.o
+.PHONY : __/examples/threading/threading.o
 
 # target to build an object file
-__/student-test/assignment1/Test_validate_username_Runner.c.o:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
-.PHONY : __/student-test/assignment1/Test_validate_username_Runner.c.o
+__/examples/threading/threading.c.o:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/threading/threading.c.o
+.PHONY : __/examples/threading/threading.c.o
 
-__/student-test/assignment1/Test_validate_username_Runner.i: __/student-test/assignment1/Test_validate_username_Runner.c.i
+__/examples/threading/threading.i: __/examples/threading/threading.c.i
 
-.PHONY : __/student-test/assignment1/Test_validate_username_Runner.i
+.PHONY : __/examples/threading/threading.i
 
 # target to preprocess a source file
-__/student-test/assignment1/Test_validate_username_Runner.c.i:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.i
-.PHONY : __/student-test/assignment1/Test_validate_username_Runner.c.i
+__/examples/threading/threading.c.i:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/threading/threading.c.i
+.PHONY : __/examples/threading/threading.c.i
 
-__/student-test/assignment1/Test_validate_username_Runner.s: __/student-test/assignment1/Test_validate_username_Runner.c.s
+__/examples/threading/threading.s: __/examples/threading/threading.c.s
 
-.PHONY : __/student-test/assignment1/Test_validate_username_Runner.s
+.PHONY : __/examples/threading/threading.s
 
 # target to generate assembly for a file
-__/student-test/assignment1/Test_validate_username_Runner.c.s:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.s
-.PHONY : __/student-test/assignment1/Test_validate_username_Runner.c.s
+__/examples/threading/threading.c.s:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/threading/threading.c.s
+.PHONY : __/examples/threading/threading.c.s
 
 test/assignment1/Test_assignment_validate.o: test/assignment1/Test_assignment_validate.c.o
 
@@ -258,7 +231,7 @@ test/assignment1/Test_assignment_validate.o: test/assignment1/Test_assignment_va
 
 # target to build an object file
 test/assignment1/Test_assignment_validate.c.o:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
 .PHONY : test/assignment1/Test_assignment_validate.c.o
 
 test/assignment1/Test_assignment_validate.i: test/assignment1/Test_assignment_validate.c.i
@@ -267,7 +240,7 @@ test/assignment1/Test_assignment_validate.i: test/assignment1/Test_assignment_va
 
 # target to preprocess a source file
 test/assignment1/Test_assignment_validate.c.i:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.i
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.i
 .PHONY : test/assignment1/Test_assignment_validate.c.i
 
 test/assignment1/Test_assignment_validate.s: test/assignment1/Test_assignment_validate.c.s
@@ -276,7 +249,7 @@ test/assignment1/Test_assignment_validate.s: test/assignment1/Test_assignment_va
 
 # target to generate assembly for a file
 test/assignment1/Test_assignment_validate.c.s:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.s
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.s
 .PHONY : test/assignment1/Test_assignment_validate.c.s
 
 test/assignment1/Test_assignment_validate_Runner.o: test/assignment1/Test_assignment_validate_Runner.c.o
@@ -285,7 +258,7 @@ test/assignment1/Test_assignment_validate_Runner.o: test/assignment1/Test_assign
 
 # target to build an object file
 test/assignment1/Test_assignment_validate_Runner.c.o:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
 .PHONY : test/assignment1/Test_assignment_validate_Runner.c.o
 
 test/assignment1/Test_assignment_validate_Runner.i: test/assignment1/Test_assignment_validate_Runner.c.i
@@ -294,7 +267,7 @@ test/assignment1/Test_assignment_validate_Runner.i: test/assignment1/Test_assign
 
 # target to preprocess a source file
 test/assignment1/Test_assignment_validate_Runner.c.i:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.i
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.i
 .PHONY : test/assignment1/Test_assignment_validate_Runner.c.i
 
 test/assignment1/Test_assignment_validate_Runner.s: test/assignment1/Test_assignment_validate_Runner.c.s
@@ -303,7 +276,7 @@ test/assignment1/Test_assignment_validate_Runner.s: test/assignment1/Test_assign
 
 # target to generate assembly for a file
 test/assignment1/Test_assignment_validate_Runner.c.s:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.s
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.s
 .PHONY : test/assignment1/Test_assignment_validate_Runner.c.s
 
 test/assignment1/Test_hello.o: test/assignment1/Test_hello.c.o
@@ -312,7 +285,7 @@ test/assignment1/Test_hello.o: test/assignment1/Test_hello.c.o
 
 # target to build an object file
 test/assignment1/Test_hello.c.o:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
 .PHONY : test/assignment1/Test_hello.c.o
 
 test/assignment1/Test_hello.i: test/assignment1/Test_hello.c.i
@@ -321,7 +294,7 @@ test/assignment1/Test_hello.i: test/assignment1/Test_hello.c.i
 
 # target to preprocess a source file
 test/assignment1/Test_hello.c.i:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.i
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.i
 .PHONY : test/assignment1/Test_hello.c.i
 
 test/assignment1/Test_hello.s: test/assignment1/Test_hello.c.s
@@ -330,7 +303,7 @@ test/assignment1/Test_hello.s: test/assignment1/Test_hello.c.s
 
 # target to generate assembly for a file
 test/assignment1/Test_hello.c.s:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.s
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.s
 .PHONY : test/assignment1/Test_hello.c.s
 
 test/assignment1/Test_hello_Runner.o: test/assignment1/Test_hello_Runner.c.o
@@ -339,7 +312,7 @@ test/assignment1/Test_hello_Runner.o: test/assignment1/Test_hello_Runner.c.o
 
 # target to build an object file
 test/assignment1/Test_hello_Runner.c.o:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
 .PHONY : test/assignment1/Test_hello_Runner.c.o
 
 test/assignment1/Test_hello_Runner.i: test/assignment1/Test_hello_Runner.c.i
@@ -348,7 +321,7 @@ test/assignment1/Test_hello_Runner.i: test/assignment1/Test_hello_Runner.c.i
 
 # target to preprocess a source file
 test/assignment1/Test_hello_Runner.c.i:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.i
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.i
 .PHONY : test/assignment1/Test_hello_Runner.c.i
 
 test/assignment1/Test_hello_Runner.s: test/assignment1/Test_hello_Runner.c.s
@@ -357,8 +330,62 @@ test/assignment1/Test_hello_Runner.s: test/assignment1/Test_hello_Runner.c.s
 
 # target to generate assembly for a file
 test/assignment1/Test_hello_Runner.c.s:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.s
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.s
 .PHONY : test/assignment1/Test_hello_Runner.c.s
+
+test/assignment4/Test_threading.o: test/assignment4/Test_threading.c.o
+
+.PHONY : test/assignment4/Test_threading.o
+
+# target to build an object file
+test/assignment4/Test_threading.c.o:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment4/Test_threading.c.o
+.PHONY : test/assignment4/Test_threading.c.o
+
+test/assignment4/Test_threading.i: test/assignment4/Test_threading.c.i
+
+.PHONY : test/assignment4/Test_threading.i
+
+# target to preprocess a source file
+test/assignment4/Test_threading.c.i:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment4/Test_threading.c.i
+.PHONY : test/assignment4/Test_threading.c.i
+
+test/assignment4/Test_threading.s: test/assignment4/Test_threading.c.s
+
+.PHONY : test/assignment4/Test_threading.s
+
+# target to generate assembly for a file
+test/assignment4/Test_threading.c.s:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment4/Test_threading.c.s
+.PHONY : test/assignment4/Test_threading.c.s
+
+test/assignment4/Test_threading_Runner.o: test/assignment4/Test_threading_Runner.c.o
+
+.PHONY : test/assignment4/Test_threading_Runner.o
+
+# target to build an object file
+test/assignment4/Test_threading_Runner.c.o:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment4/Test_threading_Runner.c.o
+.PHONY : test/assignment4/Test_threading_Runner.c.o
+
+test/assignment4/Test_threading_Runner.i: test/assignment4/Test_threading_Runner.c.i
+
+.PHONY : test/assignment4/Test_threading_Runner.i
+
+# target to preprocess a source file
+test/assignment4/Test_threading_Runner.c.i:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment4/Test_threading_Runner.c.i
+.PHONY : test/assignment4/Test_threading_Runner.c.i
+
+test/assignment4/Test_threading_Runner.s: test/assignment4/Test_threading_Runner.c.s
+
+.PHONY : test/assignment4/Test_threading_Runner.s
+
+# target to generate assembly for a file
+test/assignment4/Test_threading_Runner.c.s:
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment4/Test_threading_Runner.c.s
+.PHONY : test/assignment4/Test_threading_Runner.c.s
 
 test/unity_runner.o: test/unity_runner.c.o
 
@@ -366,7 +393,7 @@ test/unity_runner.o: test/unity_runner.c.o
 
 # target to build an object file
 test/unity_runner.c.o:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
 .PHONY : test/unity_runner.c.o
 
 test/unity_runner.i: test/unity_runner.c.i
@@ -375,7 +402,7 @@ test/unity_runner.i: test/unity_runner.c.i
 
 # target to preprocess a source file
 test/unity_runner.c.i:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.i
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.i
 .PHONY : test/unity_runner.c.i
 
 test/unity_runner.s: test/unity_runner.c.s
@@ -384,7 +411,7 @@ test/unity_runner.s: test/unity_runner.c.s
 
 # target to generate assembly for a file
 test/unity_runner.c.s:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.s
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(MAKE) -f assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.s
 .PHONY : test/unity_runner.c.s
 
 # Help Target
@@ -403,12 +430,9 @@ help:
 	@echo "... __/examples/autotest-validate/autotest-validate.o"
 	@echo "... __/examples/autotest-validate/autotest-validate.i"
 	@echo "... __/examples/autotest-validate/autotest-validate.s"
-	@echo "... __/student-test/assignment1/Test_validate_username.o"
-	@echo "... __/student-test/assignment1/Test_validate_username.i"
-	@echo "... __/student-test/assignment1/Test_validate_username.s"
-	@echo "... __/student-test/assignment1/Test_validate_username_Runner.o"
-	@echo "... __/student-test/assignment1/Test_validate_username_Runner.i"
-	@echo "... __/student-test/assignment1/Test_validate_username_Runner.s"
+	@echo "... __/examples/threading/threading.o"
+	@echo "... __/examples/threading/threading.i"
+	@echo "... __/examples/threading/threading.s"
 	@echo "... test/assignment1/Test_assignment_validate.o"
 	@echo "... test/assignment1/Test_assignment_validate.i"
 	@echo "... test/assignment1/Test_assignment_validate.s"
@@ -421,6 +445,12 @@ help:
 	@echo "... test/assignment1/Test_hello_Runner.o"
 	@echo "... test/assignment1/Test_hello_Runner.i"
 	@echo "... test/assignment1/Test_hello_Runner.s"
+	@echo "... test/assignment4/Test_threading.o"
+	@echo "... test/assignment4/Test_threading.i"
+	@echo "... test/assignment4/Test_threading.s"
+	@echo "... test/assignment4/Test_threading_Runner.o"
+	@echo "... test/assignment4/Test_threading_Runner.i"
+	@echo "... test/assignment4/Test_threading_Runner.s"
 	@echo "... test/unity_runner.o"
 	@echo "... test/unity_runner.i"
 	@echo "... test/unity_runner.s"
@@ -435,6 +465,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

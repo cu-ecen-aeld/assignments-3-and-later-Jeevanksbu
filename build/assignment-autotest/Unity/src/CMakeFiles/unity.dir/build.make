@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu
+CMAKE_SOURCE_DIR = /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build
+CMAKE_BINARY_DIR = /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build
 
 # Include any dependencies generated for this target.
 include assignment-autotest/Unity/src/CMakeFiles/unity.dir/depend.make
@@ -59,16 +59,16 @@ include assignment-autotest/Unity/src/CMakeFiles/unity.dir/flags.make
 
 assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o: assignment-autotest/Unity/src/CMakeFiles/unity.dir/flags.make
 assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o: ../assignment-autotest/Unity/src/unity.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o"
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unity.dir/unity.c.o   -c /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/Unity/src/unity.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o"
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unity.dir/unity.c.o   -c /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/Unity/src/unity.c
 
 assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unity.dir/unity.c.i"
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/Unity/src/unity.c > CMakeFiles/unity.dir/unity.c.i
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/Unity/src/unity.c > CMakeFiles/unity.dir/unity.c.i
 
 assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unity.dir/unity.c.s"
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/Unity/src/unity.c -o CMakeFiles/unity.dir/unity.c.s
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/Unity/src/unity.c -o CMakeFiles/unity.dir/unity.c.s
 
 # Object files for target unity
 unity_OBJECTS = \
@@ -80,9 +80,9 @@ unity_EXTERNAL_OBJECTS =
 assignment-autotest/Unity/src/libunity.a: assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
 assignment-autotest/Unity/src/libunity.a: assignment-autotest/Unity/src/CMakeFiles/unity.dir/build.make
 assignment-autotest/Unity/src/libunity.a: assignment-autotest/Unity/src/CMakeFiles/unity.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libunity.a"
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/src && $(CMAKE_COMMAND) -P CMakeFiles/unity.dir/cmake_clean_target.cmake
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unity.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libunity.a"
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/src && $(CMAKE_COMMAND) -P CMakeFiles/unity.dir/cmake_clean_target.cmake
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unity.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 assignment-autotest/Unity/src/CMakeFiles/unity.dir/build: assignment-autotest/Unity/src/libunity.a
@@ -90,10 +90,10 @@ assignment-autotest/Unity/src/CMakeFiles/unity.dir/build: assignment-autotest/Un
 .PHONY : assignment-autotest/Unity/src/CMakeFiles/unity.dir/build
 
 assignment-autotest/Unity/src/CMakeFiles/unity.dir/clean:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/src && $(CMAKE_COMMAND) -P CMakeFiles/unity.dir/cmake_clean.cmake
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/src && $(CMAKE_COMMAND) -P CMakeFiles/unity.dir/cmake_clean.cmake
 .PHONY : assignment-autotest/Unity/src/CMakeFiles/unity.dir/clean
 
 assignment-autotest/Unity/src/CMakeFiles/unity.dir/depend:
-	cd /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest/Unity/src /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/src /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/src/CMakeFiles/unity.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/Unity/src /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/src /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/src/CMakeFiles/unity.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : assignment-autotest/Unity/src/CMakeFiles/unity.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/assignment-autotest
+# Install script for directory: /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jeevank12/Documents/coursera_linux/assignment-1-Jeevanksbu/build/assignment-autotest/Unity/cmake_install.cmake")
+  include("/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/build/assignment-autotest/Unity/cmake_install.cmake")
 
 endif()
 
