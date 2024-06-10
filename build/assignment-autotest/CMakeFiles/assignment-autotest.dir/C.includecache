@@ -38,14 +38,6 @@ time.h
 stdbool.h
 -
 
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/Test_assignment_validate.c
-unity.h
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/unity.h
-stdbool.h
--
-examples/autotest-validate/autotest-validate.h
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/examples/autotest-validate/autotest-validate.h
-
 /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c
 unity.h
 /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/unity.h
@@ -54,33 +46,11 @@ examples/autotest-validate/autotest-validate.h
 stdbool.h
 -
 
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/Test_hello.c
-unity.h
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/unity.h
-stdbool.h
--
-
 /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/Test_hello_Runner.c
 unity.h
 /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment1/unity.h
 stdbool.h
 -
-
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment4/Test_threading.c
-pthread.h
--
-unity.h
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment4/unity.h
-stdbool.h
--
-stdlib.h
--
-errno.h
--
-unistd.h
--
-../../../examples/threading/threading.h
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/examples/threading/threading.h
 
 /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/assignment4/Test_threading_Runner.c
 unity.h
@@ -99,34 +69,6 @@ unistd.h
 -
 
 /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/assignment-autotest/test/unity_runner.c
-
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/examples/autotest-validate/autotest-validate.c
-autotest-validate.h
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/examples/autotest-validate/autotest-validate.h
-stdbool.h
--
-
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/examples/autotest-validate/autotest-validate.h
-stdbool.h
--
-stdio.h
--
-string.h
--
-
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/examples/threading/threading.c
-threading.h
-/home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/examples/threading/threading.h
-unistd.h
--
-stdlib.h
--
-stdio.h
--
-stdbool.h
--
-pthread.h
--
 
 /home/jeevank12/Documents/coursera_linux/assignments-3-and-later-Jeevanksbu/examples/threading/threading.h
 stdbool.h
