@@ -13,5 +13,9 @@ jobs:
           - uses: actions/checkout@v2
           - name: Checkout submodules
             run : git submodule update --init --recursive
+          - name: Delete CMake cache
+            run: rm -f build/CMakeCache.txt
+          - name: Run CMake
+            run: mkdir -p build && cd build && cmake ..
           - name: Run unit test
             run: ./unit-test.sh
