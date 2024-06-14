@@ -11,7 +11,6 @@
 #include <sys/stat.h>
 #include <netdb.h>
 #include <netinet/in.h>
-#include <arpa/inet.h>
 
 #define SOCKET_FAIL -1
 #define RET_OK 0
@@ -28,7 +27,6 @@ int sockfd = 0;
 #define RECV_BUFF_SIZE 1024
 #define READ_BUFF_SIZE 1024
 
-/* Cleanup function */
 void exit_cleanup(void)
 {
     if (pfDataFile != NULL)
@@ -36,64 +34,77 @@ void exit_cleanup(void)
         fclose(pfDataFile);
         unlink(pcDataFilePath);
     }
+
     if (sfd >= 0)
     {
         close(sfd);
     }
+
     if (sockfd >= 0)
     {
         close(sockfd);
     }
 }
 
-/* Signal handler */
-void sig_handler(int signo)
+void sig_handler(int signo, siginfo_t *info, void *context)
 {
-    if (signo == SIGINT || signo == SIGTERM)
+    int errno_saved = errno;
+
+    if (signo == SIGINT)
     {
-        syslog(LOG_DEBUG, "Caught signal, exiting");
-        exit_cleanup();
-        exit(EXIT_SUCCESS);
+        syslog(LOG_DEBUG, "Caught signal SIGINT, exiting");
+        printf("Caught SIGINT\n");
     }
+    else if (signo == SIGTERM)
+    {
+        syslog(LOG_DEBUG, "Caught signal SIGTERM, exiting");
+        printf("Caught SIGTERM\n");
+    }
+    errno = errno_saved;
+    exit_cleanup();
+    exit(EXIT_SUCCESS);
 }
 
-/* Setup signal handlers */
+void do_exit(int exitval)
+{
+    exit_cleanup();
+    exit(exitval);
+}
+
 int setup_signals(void)
 {
-    struct sigaction act;
-    memset(&act, 0, sizeof(act));
-    act.sa_handler = sig_handler;
+    struct sigaction sSigAction = {0};
 
-    if (sigaction(SIGINT, &act, NULL) < 0)
+    sSigAction.sa_sigaction = &sig_handler;
+    if (sigaction(SIGINT, &sSigAction, NULL) != 0)
     {
-        perror("sigaction");
+        perror("Setting up SIGINT");
         return errno;
     }
-    if (sigaction(SIGTERM, &act, NULL) < 0)
+    if (sigaction(SIGTERM, &sSigAction, NULL) != 0)
     {
-        perror("sigaction");
+        perror("Setting up SIGTERM");
         return errno;
     }
 
     return RET_OK;
 }
 
-/* Open and prepare data file */
 int setup_datafile(void)
 {
-    pfDataFile = fopen(pcDataFilePath, "a+");
-    if (pfDataFile == NULL)
+    if ((pfDataFile = fopen(pcDataFilePath, "w+")) == NULL)
     {
         perror("fopen");
+        printf("Error opening: %s\n", pcDataFilePath);
         return errno;
     }
+
     return RET_OK;
 }
 
-/* Setup socket */
 int setup_socket(void)
 {
-    struct addrinfo hints, *p;
+    struct addrinfo hints;
     int yes = 1;
 
     memset(&hints, 0, sizeof hints);
@@ -101,43 +112,31 @@ int setup_socket(void)
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_flags = AI_PASSIVE;
 
-    if (getaddrinfo(NULL, pcPort, &hints, &servinfo) != 0)
+    if ((getaddrinfo(NULL, pcPort, &hints, &servinfo)) != 0)
     {
         perror("getaddrinfo");
         return errno;
     }
 
-    for (p = servinfo; p != NULL; p = p->ai_next)
+    if ((sfd = socket(servinfo->ai_family, servinfo->ai_socktype, servinfo->ai_protocol)) < 0)
     {
-        if ((sfd = socket(p->ai_family, p->ai_socktype, p->ai_protocol)) < 0)
-        {
-            perror("socket");
-            continue;
-        }
+        perror("socket");
+        return errno;
+    }
 
-        if (setsockopt(sfd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(int)) < 0)
-        {
-            perror("setsockopt");
-            return errno;
-        }
+    if (setsockopt(sfd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(int)) < 0)
+    {
+        perror("setsockopt");
+        return errno;
+    }
 
-        if (bind(sfd, p->ai_addr, p->ai_addrlen) < 0)
-        {
-            close(sfd);
-            perror("bind");
-            continue;
-        }
-
-        break;
+    if (bind(sfd, servinfo->ai_addr, servinfo->ai_addrlen) < 0)
+    {
+        perror("bind");
+        return errno;
     }
 
     freeaddrinfo(servinfo);
-
-    if (p == NULL)
-    {
-        fprintf(stderr, "Failed to bind\n");
-        return SOCKET_FAIL;
-    }
 
     if (listen(sfd, BACKLOG) < 0)
     {
@@ -148,96 +147,186 @@ int setup_socket(void)
     return RET_OK;
 }
 
-/* Handle client connection */
-void handle_client(int client_fd)
+int file_send(void)
 {
-    char recv_buff[RECV_BUFF_SIZE];
-    ssize_t bytes_received;
-
-    while ((bytes_received = recv(client_fd, recv_buff, sizeof(recv_buff), 0)) > 0)
+    fseek(pfDataFile, 0, SEEK_SET);
+    char acReadBuff[READ_BUFF_SIZE];
+    size_t bytesRead = 0;
+    while ((bytesRead = fread(acReadBuff, 1, sizeof(acReadBuff), pfDataFile)) > 0)
     {
-        fwrite(recv_buff, 1, bytes_received, pfDataFile);
-
-        // Check for end of message (newline character)
-        if (memchr(recv_buff, '\n', bytes_received) != NULL)
+        if (send(sockfd, acReadBuff, bytesRead, 0) < 0)
         {
-            fseek(pfDataFile, 0, SEEK_SET);
-            char read_buff[READ_BUFF_SIZE];
-            size_t bytes_read;
-
-            while ((bytes_read = fread(read_buff, 1, sizeof(read_buff), pfDataFile)) > 0)
-            {
-                if (send(client_fd, read_buff, bytes_read, 0) < 0)
-                {
-                    perror("send");
-                    break;
-                }
-            }
-            fseek(pfDataFile, 0, SEEK_END);
+            perror("send");
+            return errno;
         }
     }
 
-    if (bytes_received == 0)
+    if (ferror(pfDataFile) != 0)
     {
-        syslog(LOG_DEBUG, "Closed connection from client\n");
-    }
-    else if (bytes_received < 0)
-    {
-        perror("recv");
+        perror("read");
+        return errno;
     }
 
-    close(client_fd);
+    return RET_OK;
 }
 
-/* Main function */
+int file_write(void *buff, int size)
+{
+    fseek(pfDataFile, 0, SEEK_END);
+    fwrite(buff, size, 1, pfDataFile);
+    if (ferror(pfDataFile) != 0)
+    {
+        perror("write");
+        return errno;
+    }
+
+    return RET_OK;
+}
+
+int daemonize(void)
+{
+    umask(0);
+
+    pid_t pid;
+    if ((pid = fork()) < 0)
+    {
+        perror("fork");
+        return errno;
+    }
+    else if (pid != 0)
+    {
+        exit(EXIT_SUCCESS);
+    }
+
+    if (setsid() < 0)
+    {
+        perror("setsid");
+        return errno;
+    }
+
+    if (chdir("/") < 0)
+    {
+        perror("chdir");
+        return errno;
+    }
+
+    int dev_null_fd = open("/dev/null", O_RDWR);
+    if (dev_null_fd < 0)
+    {
+        perror("open /dev/null");
+        return errno;
+    }
+    dup2(dev_null_fd, STDIN_FILENO);
+    dup2(dev_null_fd, STDOUT_FILENO);
+    dup2(dev_null_fd, STDERR_FILENO);
+
+    if (dev_null_fd > STDERR_FILENO)
+        close(dev_null_fd);
+
+    return RET_OK;
+}
 int main(int argc, char **argv)
 {
-    int iDaemon = 0;
+    int iDeamon = false;
+    int iRet = 0;
+
     openlog(NULL, 0, LOG_USER);
 
-    if (argc > 1 && strcmp(argv[1], "-d") == 0)
+    if ((argc > 1) && strcmp(argv[1], "-d") == 0)
     {
-        iDaemon = 1;
+        iDeamon = true;
     }
 
-    if (setup_signals() != RET_OK)
+    if ((iRet = setup_signals()) != 0)
     {
-        exit(EXIT_FAILURE);
+        do_exit(iRet);
     }
 
-    if (setup_datafile() != RET_OK)
+    if ((iRet = setup_datafile()) != 0)
     {
-        exit(EXIT_FAILURE);
+        do_exit(iRet);
     }
 
-    if (setup_socket() != RET_OK)
+    if (setup_socket() != 0)
     {
-        exit(EXIT_FAILURE);
+        do_exit(SOCKET_FAIL);
     }
 
-    if (iDaemon)
+    if (iDeamon)
     {
-        daemon(1, 0);
+        printf("Demonizing, listening on port %s\n", pcPort);
+        if ((iRet = daemonize()) != 0)
+        {
+            do_exit(iRet);
+        }
+    }
+    else
+    {
+        printf("Waiting for connections...\n");
     }
 
     while (1)
     {
-        struct sockaddr_storage client_addr;
-        socklen_t addr_size = sizeof(client_addr);
-        int client_fd = accept(sfd, (struct sockaddr *)&client_addr, &addr_size);
-        if (client_fd < 0)
+        struct sockaddr_storage their_addr;
+        socklen_t addr_size = sizeof their_addr;
+        if ((sockfd = accept(sfd, (struct sockaddr *)&their_addr, &addr_size)) < 0)
         {
             perror("accept");
+            sleep(1);
             continue;
         }
 
-        char client_ip[INET_ADDRSTRLEN];
-        struct sockaddr_in *sin = (struct sockaddr_in *)&client_addr;
-        inet_ntop(AF_INET, &sin->sin_addr, client_ip, sizeof(client_ip));
-        syslog(LOG_DEBUG, "Accepted connection from %s\n", client_ip);
+        struct sockaddr_in *sin = (struct sockaddr_in *)&their_addr;
+        unsigned char *ip = (unsigned char *)&sin->sin_addr.s_addr;
+        syslog(LOG_DEBUG, "Accepted connection from %d.%d.%d.%d\n", ip[0], ip[1], ip[2], ip[3]);
 
-        handle_client(client_fd);
+        int iReceived = 0;
+        char acRecvBuff[RECV_BUFF_SIZE];
+        while (1)
+        {
+            iReceived = recv(sockfd, &acRecvBuff, sizeof(acRecvBuff) - 1, 0);
+            if (iReceived < 0)
+            {
+                perror("recv");
+                do_exit(errno);
+            }
+            else if (iReceived == 0)
+            {
+                close(sockfd);
+                syslog(LOG_DEBUG, "Closed connection from %d.%d.%d.%d\n", ip[0], ip[1], ip[2], ip[3]);
+                break;
+            }
+            else if (iReceived > 0)
+            {
+                acRecvBuff[iReceived] = '\0'; // Ensure null-terminated string
+                printf("Received from client: %s\n", acRecvBuff);
+                syslog(LOG_DEBUG, "Received from client: %s\n", acRecvBuff);
+
+                char *pcEnd = strstr(acRecvBuff, "\n");
+                if (pcEnd == NULL)
+                {
+                    int ret = 0;
+                    if ((ret = file_write(acRecvBuff, iReceived)) != 0)
+                    {
+                        do_exit(ret);
+                    }
+                }
+                else
+                {
+                    int ret = 0;
+                    if ((ret = file_write(acRecvBuff, (int)(pcEnd - acRecvBuff + 1))) != 0)
+                    {
+                        do_exit(ret);
+                    }
+
+                    if ((ret = file_send()) != 0)
+                    {
+                        do_exit(ret);
+                    }
+                }
+            }
+        }
     }
 
-    exit(EXIT_SUCCESS);
+    do_exit(RET_OK);
 }
